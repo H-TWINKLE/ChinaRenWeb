@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+<link rel="stylesheet" type="text/css" href="css/main.css">
+<!-- Font-icon css-->
+<link rel="stylesheet" type="text/css"
+	href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<title>chinaren - login</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="keywords"
+	content="ChinaRen,同学录,校友网,校友录,大学生,校园网,校内网,大学,青春,校园,校内,同学,师兄,校友,朋友,交友,问答,话题,日记,照片,心情">
+<meta name="description"
+	content="ChinaRen全称中国ChinaRen，是中国大学生最喜爱的纯净的校园实名制SNS社交网络。加入ChinaRen你可以联络同学和朋友；和同学朋友们一起分享日记、照片、心情、音乐和视频；寻找校友，结识同龄朋友；用照片和日记记录生活，展示自我。">
+
+<!-- Header container -->
+
+<meta name="author" content="ChinaTongxue Social Network Studio">
+
+
+<!-- Le styles -->
+<link rel="stylesheet" href="login/bootstrap.css" type="text/css"
+	media="screen,print">
+<link rel="stylesheet" href="login/font-awesome.css" type="text/css"
+	media="screen,print">
+
+
+<link rel="stylesheet" href="login/style-firefox.css" type="text/css"
+	media="screen,print">
+
+
+<link rel="stylesheet" href="login/bootstrap-responsive.css"
+	type="text/css" media="screen,print">
+<link rel="stylesheet" href="login/prettify.css" type="text/css"
+	media="screen,print">
+
+<!-- Ad style Css -->
+<link rel="stylesheet" href="login/ad.css" type="text/css"
+	media="screen,print">
+
+<!-- Scripts -->
+<!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
+<!--[if lt IE 9]>
+<script src="http://static.chinatongxue.com/static/js/common/html5shiv.js"></script>
+<![endif]-->
+
+
+
+
+<style id="holderjs-style" type="text/css">
+.holderjs-fluid {
+	font-size: 16px;
+	font-weight: bold;
+	text-align: center;
+	font-family: sans-serif;
+	margin: 0
+}
+</style>
+</head>
+
+<body>
+
+	<!-- Top navigation -->
+
+	<div class="navbar navbar-inverse navbar-fixed-top"
+		style="z-index: 1000; position: fixed; top: 0px; margin-left: 0px; width: 1349px; left: 0px;">
+		<div class="navbar-inner navbar-inner-fixed-top">
+			<div class="container-fluid">
+				<button type="button" class="btn btn-navbar" data-toggle="collapse"
+					data-target=".nav-collapse">
+					<span class="icon-bar"></span> <span class="icon-bar"></span> <span
+						class="icon-bar"></span>
+				</button>
+				<a class="brand" href="" title="欢迎来到ChinaRen"></a>
+				<div class="nav-collapse collapse">
+					<ul class="nav">
+						<li class="active" title="首页"><a href="">首页</a></li>
+					</ul>
+				</div>
+				<form class="navbar-form" method="post" action="">
+					<ul class="nav pull-right">
+						<li class="controls input-prepend"><span class="add-on"
+							style="height: 30px"><i class="fa fa-user fa-fw"></i></span><input
+							style="height: 30px" class="span2" name="ad" id="ad"
+							placeholder="请输入邮箱即注册邮箱" type="text"></li>
+						<li class="controls input-prepend"><span class="add-on"
+							style="height: 30px"><i class="fa fa-lock fa-fw"></i></span><input
+							class="span2" name="pa" id="pa" maxlength="18"
+							placeholder="请输入登录密码" type="password" style="height: 30px"></li>
+						<li><span><button class="btn" id="de" type="button"
+									style="height: 30px">登录</button></span></li>
+					</ul>
+				</form>
+				<!--/.nav-collapse -->
+			</div>
+		</div>
+	</div>
+	<!-- Main container -->
+	<div class="container-fluid" style="background-color: #fcfcfc">
+		<div class="row-fluid">
+
+			<!-- Left main container [login frame] -->
+			<div class="span1">
+				<section class="login-content">
+					<div class="logo">
+						<h1>ChinaRen</h1>
+					</div>
+					<div class="login-box">
+						<form class="login-form" action="" method="post">
+							<h3 class="login-head">
+								<i class="fa fa-lg fa-fw fa-user"></i>登录
+							</h3>
+							<div class="form-group">
+								<label class="control-label">邮箱</label> <input
+									class="form-control" type="text" placeholder="Email" autofocus
+									name="admin" id="admins">
+							</div>
+							<div class="form-group">
+								<label class="control-label">密码</label> <input
+									class="form-control" type="password" placeholder="Password"
+									name="password" id="password">
+							</div>
+							<div class="form-group">
+								<div class="utility">
+									<p class="semibold-text mb-0">
+										<a data-toggle="flip">忘记密码 ?</a>
+									</p>
+								</div>
+							</div>
+							<div class="form-group btn-container">
+								<button type="button" class="btn btn-primary btn-block"
+									id="demoNotify">
+									<i class="fa fa-sign-in fa-lg fa-fw"></i>登录
+								</button>
+							</div>
+							<div class="form-group mt-20">
+								<p class="semibold-text mb-0">
+									<a href="chinaren-register.jsp"><i
+										class="fa fa-angle-left fa-fw"></i> 注册</a>
+								</p>
+							</div>
+						</form>
+						<form class="forget-form">
+							<h3 class="login-head">
+								<i class="fa fa-lg fa-fw fa-lock"></i>忘记密码 ?
+							</h3>
+							<div class="form-group">
+								<label class="control-label">邮箱</label> <input
+									class="form-control" type="text" placeholder="Email"
+									id="forgetpassadmin">
+							</div>
+							<div class="form-group btn-container">
+								<button type="button" class="btn btn-primary btn-block"
+									onclick="btforgetpss()" id="btforget">
+									<i class="fa fa-unlock fa-lg fa-fw"></i>重置密码
+								</button>
+							</div>
+							<div class="form-group mt-20">
+								<p class="semibold-text mb-0">
+									<a data-toggle="flip"><i class="fa fa-angle-left fa-fw"></i>
+										登录</a>
+								</p>
+							</div>
+						</form>
+					</div>
+				</section>
+
+
+
+			</div>
+			<!--/span2-->
+			<!-- Right main container -->
+
+			<div class="span10">
+				<div class="row-fluid">
+					<!-- Right main container [Left register frame] -->
+					<div class="span5"></div>
+					<!--/span5-->
+					<!-- Right main container [Right image and introduction frame] -->
+					<div class="span7">
+
+						<!-- Right main container [Right image frame] -->
+						<div class="row-fluid">
+							<img class="img-rounded" src="login/image.jpg"
+								alt="欢迎加入ChinaRen，ChinaRen全称中国ChinaRen，中国领先的校园实名制SNS社交网络。">
+						</div>
+						<!--/row-->
+
+						<!-- Right main container [Right introduction frame] -->
+						<div class="row-fluid">
+							<div class="span4">
+								<h4>ChinaRen</h4>
+								<p>
+									<img alt="ChinaRen" src="login/aboutus-intro.png">
+								</p>
+								<p>
+									<span class="site-instruction-text">ChinaRen是建立在同学关系基础上的大学校园实名制SNS
+										互动社区，全称为中国ChinaRen，是一个集同学录、个人主页、同学问答、同学话题、同学阅读等功能于一体并由大学生自主创建运营的全新校园社交网站。不论你现
+										在是在校学生或是已经毕业工作，你都可以在ChinaRen上找到你的昔日同窗或校友，可以向他们留言问好或与他们畅谈交流......</span>
+								</p>
+								<p class="site-instruction-btn btn">
+									<a title="更多介绍" target="_blank">更多介绍»</a>
+								</p>
+							</div>
+							<div class="span4">
+								<h4>致同学们</h4>
+								<p>
+									<img alt="致同学们" src="login/aboutus-speech.png">
+								</p>
+								<p>
+									<span class="site-instruction-text">ChinaRen是一个全新的定位于高校学生群体的校园实名制社
+										交网络平台，设计界面简洁美观，功能模块紧贴大学生日常学习与生活需求。为了保证ChinaRen纯真、纯净、自由、快乐的交流氛围，ChinaRen只对高校学生用户开放注
+										册。ChinaRen的使命就是始终扎根大学校园并实实在在的做好校园市场，努力打造中国大学生最喜爱的校园社交网络品牌......</span>
+								</p>
+								<p class="site-instruction-btn btn">
+									<a title="更多话语" target="_blank">更多话语 »</a>
+								</p>
+							</div>
+							<div class="span4">
+								<h4>未来愿景</h4>
+								<p>
+									<img alt="未来愿景" src="login/aboutus-future.png">
+								</p>
+								<p>
+									<span class="site-instruction-text">ChinaRen是一个初创网站，将用户群锁定在大学在校生或已
+										从大学毕业走向社会的高端人群。自正式上线以来，ChinaRen以全新的面貌赢得了整个华夏校园同学们的喜爱。同学、一生的朋友，我要我们在一起！未来愿景就是让
+										全国所有高校的同学们成为朋友，让ChinaRen也成为所有同学们的朋友；让ChinaRen真正成为同学的世界，成为朋友的世界......</span>
+								</p>
+								<p class="site-instruction-btn btn">
+									<a title="愿景全文" target="_blank">愿景全文»</a>
+								</p>
+							</div>
+						</div>
+						<!--/row-->
+
+
+
+					</div>
+					<!--/span7-->
+				</div>
+				<!--/row-->
+			</div>
+			<!--/span10-->
+
+		</div>
+		<!--/row-->
+		<!-- Bottom navigation -->
+	</div>
+	<!--/container-->
+
+	<!-- Footer container -->
+
+	<!-- Le javascript
+================================================== -->
+	<!-- Placed at the end of the document so the pages load faster -->
+	<script src="login/bootstrap.js"></script>
+	<script src="login/jquery.js"></script>
+	<script src="login/bootstrap-transition.js"></script>
+	<script src="login/bootstrap-alert.js"></script>
+	<script src="login/bootstrap-modal.js"></script>
+	<script src="login/bootstrap-dropdown.js"></script>
+	<script src="login/bootstrap-scrollspy.js"></script>
+	<script src="login/bootstrap-tab.js"></script>
+	<script src="login/bootstrap-tooltip.js"></script>
+	<script src="login/bootstrap-popover.js"></script>
+	<script src="login/bootstrap-button.js"></script>
+	<script src="login/bootstrap-collapse.js"></script>
+	<script src="login/bootstrap-carousel.js"></script>
+	<script src="login/bootstrap-typeahead.js"></script>
+	<script src="login/bootstrap-affix.js"></script>
+
+	<script src="login/common-function.js"></script>
+	<script src="login/common-jquery-code.js"></script>
+	<script src="login/validate-form.js"></script>
+	<script src="login/validate-code.js"></script>
+	<script src="login/choose-school.js"></script>
+	<script src="login/menu-related-register.js"></script>
+
+	<script src="login/holder.js"></script>
+	<script src="login/prettify.js"></script>
+
+	<script src="login/application.js"></script>
+
+
+	<div id="topcontrol" data-toggle="tooltip" data-placement="top"
+		style="position: fixed; bottom: 45px; right: 28px; opacity: 0; cursor: pointer;"
+		title="" data-original-title="返回顶部">
+		<span style="color: #3b5998;"><i
+			class="fa fa-chevron-circle-up fa-4x"></i></span>
+	</div>
+</body>
+
+
+
+<script src="js/jquery-2.1.4.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/plugins/pace.min.js"></script>
+<script src="js/main.js"></script>
+<script type="text/javascript" src="js/plugins/bootstrap-notify.min.js"></script>
+<script type="text/javascript" src="js/plugins/sweetalert.min.js"></script>
+<script type="text/javascript">
+	$('#demoNotify').click(
+			function() {
+				$.ajax({
+					url : "LoginServlet",
+					type : "post",
+					data : {
+						"action" : "post",
+						"admins" : $("#admins").val(),
+						"password" : $("#password").val()
+					},
+					success : function(data) {
+						if (data == "登陆成功!") {
+							$.notify({
+								title : "提示 : ",
+								message : data,
+								icon : 'fa fa-check'
+							}, {
+								type : "info"
+							});
+							window.setTimeout(
+									"window.location='chinaren-index.jsp'",
+									1000);
+						} else {
+							$.notify({
+								title : "提示 : ",
+								message : data,
+								icon : 'fa fa-check'
+							}, {
+								type : "info"
+							})
+						}
+					},
+					error : function() {
+						$.notify({
+							title : "错误 : ",
+							message : "网络异常",
+							icon : 'fa fa-check'
+						}, {
+							type : "info"
+						})
+					}
+				})
+			});
+
+	$('#de').click(
+			function() {
+				$.ajax({
+					url : "LoginServlet",
+					type : "post",
+					data : {
+						"action" : "post",
+						"admins" : $("#ad").val(),
+						"password" : $("#pa").val()
+					},
+					success : function(data) {
+						if (data == "登陆成功!") {
+							$.notify({
+								title : "提示 : ",
+								message : data,
+								icon : 'fa fa-check'
+							}, {
+								type : "info"
+							});
+							window.setTimeout(
+									"window.location='chinaren-index.jsp'",
+									1000);
+						} else {
+							$.notify({
+								title : "提示 : ",
+								message : data,
+								icon : 'fa fa-check'
+							}, {
+								type : "info"
+							})
+						}
+					},
+					error : function() {
+						$.notify({
+							title : "错误 : ",
+							message : "网络异常",
+							icon : 'fa fa-check'
+						}, {
+							type : "info"
+						})
+					}
+				})
+			});
+
+	function btforgetpss() {
+		document.getElementById("btforget").disabled = 'disabled';
+		$.ajax({
+			url : "ForgetPassServlet",
+			type : "post",
+			data : {
+				"action" : "post",
+				"forgetpassadmin" : $("#forgetpassadmin").val()
+			},
+			success : function(data) {
+				$.notify({
+					title : "提示 : ",
+					message : data,
+					icon : 'fa fa-check'
+				}, {
+					type : "info"
+				});
+				document.getElementById("btforget").disabled = false
+
+			},
+			error : function() {
+				$.notify({
+					title : "错误 : ",
+					message : "网络异常",
+					icon : 'fa fa-check'
+				}, {
+					type : "info"
+				});
+				document.getElementById("btforget").disabled = false
+			}
+		})
+	}
+</script>
+
+
+</html>
